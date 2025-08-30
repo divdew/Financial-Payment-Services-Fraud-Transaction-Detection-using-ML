@@ -1,11 +1,11 @@
-🚨 #Fraud Transaction Detection
-📌 Project Overview
+# 🚨 Fraud Transaction Detection <br><br>
+**📌 Project Overview**  <br>
 
 This project focuses on building a machine learning model to detect fraudulent financial transactions using a real-world inspired dataset (~6.3M rows, 10+ features). Fraudulent transactions are extremely rare compared to legitimate ones, making this a highly imbalanced classification problem.
 The goal is to proactively identify fraud patterns, improve detection rates, and suggest infrastructure-level prevention strategies for financial institutions.
 
-📂 #Dataset
-Size: 6,362,620 rows × 10 columns
+**📂 #Dataset** <br>
+Size: 6,362,620 rows × 10 columns <br>
 Key Features:
 step: Time step (hours)
 type: Transaction type (CASH_OUT, TRANSFER, PAYMENT, etc.)
@@ -16,7 +16,7 @@ isFraud: Fraud label (target variable)
 isFlaggedFraud: Flag raised by existing system
 Source: Accredian Business Case Dataset
 
-⚙️# Methodology
+**⚙️# Methodology**
 1. Data Preprocessing
 Handled missing values, infinite values, and zero balances with safe replacements.
 Removed redundant raw balance columns by engineering more meaningful features.
@@ -36,25 +36,25 @@ Confusion Matrix
 Precision, Recall, F1-score
 Recall@TopK (operational focus)
 
-📊 # Results
+**📊 # Results**
 ROC-AUC: ~0.99
 Fraud concentrated in TRANSFER and CASH_OUT transaction types.
 Most fraud transactions occur between 1-8 hours everyday.
 Engineered features (balance discrepancies, ratios) were top predictors, confirming domain intuition.
 
-🔑 # Key Insights
+**🔑 # Key Insights**
 Fraudulent transactions often leave inconsistencies in balance updates.
 Fraudsters tend to drain accounts completely, reflected in high ratio features.
 Most fraud flows through TRANSFER → CASH_OUT, consistent with money laundering patterns.
 Temporal features add moderate but useful signal (fraud spikes at odd hours).
 
-🛡️ # Recommendations
+**🛡️ # Recommendations**
 Implement real-time fraud detection with hybrid ML + rules.
 Introduce velocity checks and step-up authentication for high-risk transactions.
 Monitor model drift and retrain regularly to adapt to evolving fraud strategies.
 Use canary rollouts and A/B testing to evaluate new prevention measures before full deployment.
 
-🚀 # How to Run
+**🚀 How to Run**
 Clone this repository
 git clone https://github.com/div_d/Financial-Payment-Services-Fraud-Tansactions-dectection-using-ML.git
 cd Financial-Payment-Services-Fraud-Tansactions-dectection-using-ML
@@ -65,8 +65,8 @@ pip install -r requirements.txt
 Open the notebook and run step by step
 jupyter notebook deevyansh-fraudtransactions.ipynb
 
-#🧑‍💻 Author
-Deevyansh Dewangan
-B.Tech 2025, IIT Roorkee
-
+**🧑‍💻 Author <br>
+Deevyansh Dewangan  <br>
+B.Tech 2025, IIT Roorkee**
+<br><br>
 Focus: Machine Learning, Data Science, Financial Modeling
